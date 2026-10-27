@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Center Registration</title>
+    <link rel="stylesheet" href="style registration.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">🎓 Learning Center</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#students">Students</a>
+            <a href="#registration" class="active">Registration</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="small-title">JOIN OUR LEARNING COMMUNITY</p>
+                <h1>Student Registration</h1>
+                <p>Fill out the form below to register for your favorite course<br>
+                and start your learning journey with us.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/3976/3976631.png"
+                     alt="Books and graduation cap">
+            </div>
+        </section>
+
+        <div class="content-grid">
+
+            <div class="left-column">
+
+                <section class="panel courses" id="courses">
+                    <h2>📘 Available Courses</h2>
+                    <ul class="course-list">
+                        <li>HTML</li>
+                        <li>React</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Web Development</li>
+                    </ul>
+                </section>
+
+                <section class="panel students" id="students">
+                    <h2>👥 Our Students</h2>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Roll No</th>
+                                    <th>Student Name</th>
+                                    <th>Course</th>
+                                    <th>Batch</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>101</td>
+                                    <td>Ali Raza</td>
+                                    <td>HTML</td>
+                                    <td>Batch 01</td>
+                                    <td><span class="status active-status">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>102</td>
+                                    <td>Sara Khan</td>
+                                    <td>CSS</td>
+                                    <td>Batch 01</td>
+                                    <td><span class="status active-status">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>103</td>
+                                    <td>Ahmed Malik</td>
+                                    <td>JavaScript</td>
+                                    <td>Batch 02</td>
+                                    <td><span class="status active-status">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>104</td>
+                                    <td>Hina Fatima</td>
+                                    <td>React</td>
+                                    <td>Batch 02</td>
+                                    <td><span class="status inactive-status">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>105</td>
+                                    <td>Usman Ali</td>
+                                    <td>Python</td>
+                                    <td>Batch 03</td>
+                                    <td><span class="status active-status">Active</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="panel benefits">
+                    <h2>ℹ️ Why Join Us?</h2>
+                    <ul>
+                        <li>Expert Instructors</li>
+                        <li>Practical Learning</li>
+                        <li>Hands-on Projects</li>
+                        <li>Certificate Programs</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <section class="panel registration" id="registration">
+                <h2>👤 Registration Form</h2>
+
+                <form action="#" method="get">
+                    <label for="fullname">Full Name <span>*</span></label>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name" required>
+
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="password">Password <span>*</span></label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter your password" required>
+
+                    <label for="phone">Contact Number <span>*</span></label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="03xx-xxxxxxx" required>
+
+                    <label>Gender <span>*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Male" required> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+
+                    <label>Select Course <span>*</span></label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="course" value="HTML"> HTML</label>
+                        <label><input type="checkbox" name="course" value="React"> React</label>
+                        <label><input type="checkbox" name="course" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="course" value="Python"> Python</label>
+                        <label><input type="checkbox" name="course" value="JavaScript"> JavaScript</label>
+                        <label><input type="checkbox" name="course" value="Web Development"> Web Development</label>
+                    </div>
+
+                    <label for="address">Address <span>*</span></label>
+                    <textarea id="address" name="address"
+                              placeholder="Enter your address" required></textarea>
+
+                    <button type="submit">Submit Registration</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 Learning Center. All Rights Reserved.</p>
+        <div>
+            <a href="#courses">Learn</a>
+            <a href="#students">Grow</a>
+            <a href="#home">Build Your Future</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+    </body>
+</html>
